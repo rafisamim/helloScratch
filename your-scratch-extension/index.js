@@ -53,7 +53,7 @@ class Scratch3YourExtension {
 
 
     myFirstBlock ({ MY_NUMBER }) {
-        return 'The circle area is: ' + (3.14 * (MY_NUMBER ** 2));
+        return 'The circle area is: ' + (3.1416 * (MY_NUMBER ** 2));
     }
 }
 
