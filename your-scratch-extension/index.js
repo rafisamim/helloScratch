@@ -1,11 +1,13 @@
 const BlockType = require('../../extension-support/block-type');
 const ArgumentType = require('../../extension-support/argument-type');
 const TargetType = require('../../extension-support/target-type');
+const mqtt = require('mqtt')
 
 class Scratch3YourExtension {
 
     constructor (runtime) {
-        // put any setup for your extension here
+        this.runtime = runtime;
+        this.client = mqtt.connect('mqtt://test.mosquitto.org');
     }
 
     /**
